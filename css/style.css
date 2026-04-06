@@ -1,0 +1,106 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body - Animated Gradient Background */
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Segoe UI", sans-serif;
+  transition: 0.5s;
+}
+
+/* 🌙 Dark Mode */
+body.dark {
+  background: linear-gradient(-45deg, #1e1e2f, #3a3a6a, #000000, #1e1e2f);
+  background-size: 400% 400%;
+  animation: gradientBG 10s ease infinite;
+  color: white;
+}
+
+/* ☀️ Light Mode */
+body.light {
+  background: linear-gradient(135deg, #e0eafc, #cfdef3);
+  color: #333;
+}
+
+/* Gradient Animation */
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Container - Glass Effect */
+.container {
+  text-align: center;
+  padding: 40px;
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Title */
+h1 {
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+/* Date */
+#date {
+  font-size: 18px;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+
+/* Clock Box */
+#clock {
+  font-size: 55px;
+  font-weight: bold;
+  padding: 20px 50px;
+  border-radius: 15px;
+  margin: 15px 0;
+  background: rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+  letter-spacing: 2px;
+}
+
+/* Button */
+button {
+  margin-top: 20px;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+/* Button Colors */
+body.dark button {
+  background: #ff7a00;
+  color: white;
+}
+
+body.light button {
+  background: #333;
+  color: white;
+}
+
+/* Hover Effect */
+button:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}

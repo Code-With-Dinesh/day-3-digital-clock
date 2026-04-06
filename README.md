@@ -20,4 +20,4 @@ A simple digital clock built using HTML, CSS, and JavaScript.
 ![Digital Clock](screenshot.png)
 
 ## 🌐 Live Demo
- 
+ https://code-with-dinesh.github.io/day-3-digital-clock/
